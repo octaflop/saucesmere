@@ -13,6 +13,7 @@
 
 * Admin Logging
 * Emails (Mandrill)
+* Subdomains? Domain management? PaaS?
 
 ## Minimal Viable Project
 

@@ -1,2 +1,7 @@
 Django==1.5.5
 South==0.8.2
+django-tastypie==0.10.0
+python-dateutil==2.1
+python-mimeparse==0.1.4
+six==1.4.1
+

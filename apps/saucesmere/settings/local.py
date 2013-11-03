@@ -1,4 +1,9 @@
 from .base import *
+from .base import *
+
+INSTALLED_APPS += (
+    'django_extensions',
+)
 
 DATABASES = {
     'default': {

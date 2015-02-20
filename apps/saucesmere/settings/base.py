@@ -40,6 +40,7 @@ DJANGO_APPS = (
 
 LOCAL_APPS = (
     'saucesmere',
+    'blog',
 )
 
 THIRD_PARTY_APPS = ()

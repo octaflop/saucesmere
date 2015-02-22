@@ -4,6 +4,5 @@
 local_settings.py
 *.db
 *.swp
-*.sublime-project
 *.sublime-workspace
 

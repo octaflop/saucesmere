@@ -7,7 +7,7 @@ from rest_framework import serializers
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = settings.AUTH_USER_MODULE
+        model = User
         fields = ('url', 'username', 'email', 'groups')
 
 

@@ -39,6 +39,7 @@ DJANGO_APPS = (
 )
 
 LOCAL_APPS = (
+    'users',
     'saucesmere',
     'blog',
 )

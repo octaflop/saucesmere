@@ -10,7 +10,7 @@ from rest_framework import routers
 from users.api.views import BaseProfileViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', BaseProfileViewSet)
+router.register(r'baseprofiles', BaseProfileViewSet)
 
 urlpatterns = patterns('',
     url(r'^', include(router.urls)),

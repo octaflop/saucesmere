@@ -13,4 +13,4 @@ class BaseProfile(models.Model):
     avatar = models.ImageField(_("avatar"), blank=True)
 
     def __unicode__(self):
-        return self.email
+        return self.user.username

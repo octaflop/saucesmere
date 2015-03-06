@@ -7,5 +7,5 @@ from rest_framework import serializers
 class BaseProfileSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = BaseProfile
-        fields = ('url', 'username', 'email', 'groups')
+        fields = ('avatar',)
 

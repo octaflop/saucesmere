@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sauces Mere — {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bower_components/angular-material/angular-material.min.css">
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+{% block javascript %}
+  <!-- Angular Material Dependencies -->
+  <script src="{{ STATIC_URL }}bower_components/angular/angular.min.js"></script>
+  <script src="{{ STATIC_URL }}bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="{{ STATIC_URL }}bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="{{ STATIC_URL }}bower_components/angular-material/angular-material.min.js"></script>
+
+  <!-- app-specific controller -->
+  <script src="{{ STATIC_URL }}users/js/app.js"></script>
+{% endblock %}
+</body>
+</html>

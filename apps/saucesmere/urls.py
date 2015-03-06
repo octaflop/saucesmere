@@ -13,7 +13,12 @@ router = routers.DefaultRouter()
 router.register(r'baseprofiles', BaseProfileViewSet)
 router.register(r'users', UserViewSet)
 
+appurls = patterns('',
+    url(r'users/', include('users.urls', namespace='users')),
+)
+
 urlpatterns = patterns('',
+    url(r'^m/', include(appurls, namespace='app')),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 

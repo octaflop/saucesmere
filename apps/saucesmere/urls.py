@@ -4,6 +4,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from rest_framework import routers
 
@@ -24,6 +25,8 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
 )
+
+urlpatterns += staticfiles_urlpatterns()
 
 urlpatterns += patterns('',
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',

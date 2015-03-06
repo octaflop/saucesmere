@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html {% block html_attrs %}{% endblock html_attrs %}>
 <head>
   <title>Sauces Mere — {% block title %}{% endblock %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bower_components/angular-material/angular-material.css">
+  {% block extra_css %}
+  {% endblock %}
 </head>
-<body>
+<body {% block body_attrs %}{% endblock %}>
 
 {% block content %}
 {% endblock %}
@@ -16,8 +18,10 @@
   <script src="{{ STATIC_URL }}bower_components/angular-aria/angular-aria.min.js"></script>
   <script src="{{ STATIC_URL }}bower_components/angular-material/angular-material.min.js"></script>
 
+  {% block extra_js %}
   <!-- app-specific controller -->
   <script src="{{ STATIC_URL }}users/js/app.js"></script>
+  {% endblock %}
 {% endblock %}
 </body>
 </html>

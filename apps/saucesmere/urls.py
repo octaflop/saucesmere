@@ -7,11 +7,10 @@ from django.contrib.auth.models import User
 
 from rest_framework import routers
 
-from users.api.views import UserViewSet, GroupViewSet
+from users.api.views import BaseProfileViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
-router.register(r'groups', GroupViewSet)
+router.register(r'users', BaseProfileViewSet)
 
 urlpatterns = patterns('',
     url(r'^', include(router.urls)),

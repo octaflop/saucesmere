@@ -1,17 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from django.conf import settings
-from django.contrib.auth.models import User, Group
+from users.models import BaseProfile
 from rest_framework import serializers
 
-
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class BaseProfileSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = User
+        model = BaseProfile
         fields = ('url', 'username', 'email', 'groups')
 
-
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Group
-        fields = ('url', 'name')

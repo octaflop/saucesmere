@@ -48,10 +48,7 @@ THIRD_PARTY_APPS = (
     'rest_framework',
 )
 
-
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
-
-AUTH_USER_MODULE = "users.SauceUser"
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
